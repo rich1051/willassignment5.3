@@ -30,3 +30,17 @@ function showCollection(collectionArray) {
     }
 
 showCollection(collection);
+
+function findByArtist(artist) {
+    let matchingAlbums = [];
+    for (let album of collection) {
+        if (album.artist === artist) {
+          matchingAlbums.push(album);
+        }
+      }
+
+    return matchingAlbums;
+    }
+
+console.log(findByArtist('Green Day'));
+console.log(findByArtist('Queen'));
