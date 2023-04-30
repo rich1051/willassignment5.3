@@ -21,3 +21,12 @@ console.log(addToCollection('Prounounced Leh-Nerd Skin-Nerd', 'Lynyrd Skynyrd', 
 console.log(addToCollection('Goodbye Yellow Brick Road', 'Elton John', 1973));
 
 console.log(collection);
+
+function showCollection(collectionArray) {
+    console.log(`Number of albums in the collection: ${collectionArray.length}`);
+    for (let album of collectionArray) {
+        console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+      }
+    }
+
+showCollection(collection);
